@@ -1,1 +1,1 @@
-# MERN-stack-project-ema-john
+# MERN-stack-project-ema-john-client
