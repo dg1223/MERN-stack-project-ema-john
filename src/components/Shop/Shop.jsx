@@ -152,7 +152,7 @@ const Shop = () => {
             className={currentPage === number ? "selected" : ""}
             onClick={() => setCurrentPage(number)}
           >
-            {number}
+            {number + 1}
           </button>
         ))}
         <select value={itemsPerPage} onChange={handleSelectChange}>
