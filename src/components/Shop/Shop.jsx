@@ -36,12 +36,14 @@ const Shop = () => {
   // same as above but using the Array constructor
   const pageNumbers = [...Array(totalPages).keys()];
 
+  // Our original code
   /* useEffect(() => {
     fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []); */
 
+  // Code given by ChatGPT
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
@@ -99,10 +101,10 @@ const Shop = () => {
   };
 
   // Handle pagination
-  const options = [5, 10, 20];
+  const options = [5, 10, 15, 20];
   const handleSelectChange = (event) => {
     setItemsPerPage(event.target.value);
-    setCurrentPage(1);
+    setCurrentPage(0);
   };
 
   return (
