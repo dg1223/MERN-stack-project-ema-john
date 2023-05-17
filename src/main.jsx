@@ -25,12 +25,12 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:5000/totalProducts"),
       },
       {
-        path: "orders",
+        path: "/orders",
         element: <Orders></Orders>,
         loader: cartProductsLoader,
       },
       {
-        path: "inventory",
+        path: "/inventory",
         element: (
           <PrivateRoute>
             <Inventory></Inventory>
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "checkout",
+        path: "/checkout",
         element: (
           <PrivateRoute>
             <Checkout></Checkout>
@@ -46,11 +46,11 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "login",
+        path: "/login",
         element: <Login></Login>,
       },
       {
-        path: "signup",
+        path: "/signup",
         element: <SignUp></SignUp>,
       },
     ],
